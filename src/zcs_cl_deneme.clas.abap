@@ -1,0 +1,30 @@
+CLASS zcs_cl_deneme DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS start_of_selection.
+    METHODS pbo_0100.
+    METHODS pai_0100.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zcs_cl_deneme IMPLEMENTATION.
+
+  METHOD start_of_selection.
+
+  ENDMETHOD.
+
+  METHOD pbo_0100.
+
+  ENDMETHOD.
+
+  METHOD pai_0100.
+
+  ENDMETHOD.
+
+ENDCLASS.
