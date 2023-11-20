@@ -17,11 +17,12 @@ define view ZCS_CDS_002_P1 as select from vbrp      as t1
     t1.aupos,
     t4.kunnr,
     concat_with_space( t5.name1, t5.name2, 1 ) as name,
-    left( t4.kunnr, 3 ) as left_kunnr,
-    length( t3.matnr ) as matnr_lenght,
+    left( t4.kunnr, 3 )                        as left_kunnr,
+    length( t3.matnr )                         as matnr_lenght,
     case t2.fkart when 'FAS' then 'Peşinat talebi iptali'
                   when 'FAZ' then 'Peşinat talebi'
-                  else 'Fatura' end as fatura_tur,
+                  else 'Fatura' 
+    end as fatura_tur,
     t2.fkdat,
     currency_conversion( amount => t1.netwr,
                          exchange_rate_date => t2.fkdat,
